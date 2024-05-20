@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    color: cadetblue;
+}
+#main-section{
+    background-color: #f2f2f2;
+    width: 600px;
+    padding: 30px;
+    margin: 40px auto;
+}
+h2{
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+#main-section p{
+    font-size: 20px;
+    margin: 20px 0px;
+}
+#label{
+    display: inline-block;
+    width: 180px;
+}
+#input{
+    display: inline-block;
+    width: 350px;
+}
+input[type="number"]{
+    border-radius: 50px;
+    width: 80%;
+    height: 40px;
+    border: 1px solid rgb(212, 212, 212);
+}
+input[type="number"]:focus{
+    border: 2px solid #80DDF5;
+}
+#amount{
+    margin: 20px 0px;
+}
+h4{
+    font-size: 19px;
+}
+.btn{
+    padding: 10px 18px;
+    font-size: 20px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    background-color: rgb(46, 131, 75);
+    color: #fff;
+    border: none;
+}
+.btn:hover{
+    background-color: burlywood;
+    color: #000;
+}
