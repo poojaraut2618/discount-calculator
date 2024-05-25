@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Itim&display=swap" rel="stylesheet">
+    <script src="functions.js"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                 <h4>Bill Amount</h4>
             </div>
             <div id="input">
-                <input type="number">
+                <input type="number" id="bill-amount">
             </div>
         </div>
         <div id="percentage">
@@ -29,13 +30,29 @@
                 <h4>Discount Percentage</h4>
             </div>
             <div id="input">
-                <input type="number">
+                <input type="number" id="disc-percentage">
             </div>
         </div>
 
-        <button type="button" class="btn">Calculate</button>
-        <p>Total Discount Amount ==</p>
+        <button type="button" class="btn" id="button" onclick="calculate()">Calculate</button>
+        <p>Total Discount Amount == <span id="result"></span> </p>
     </section>
+
+    <!-- <script>
+        document.getElementById("button").onclick = function () { calculate() };
+
+        function calculate() {
+            var amount = document.getElementById("bill-amount").value;
+            var percentage = document.getElementById("disc-percentage").value;
+
+            var discount = amount * (percentage / 100);
+
+            var discAmount = amount - discount;
+            // console.log("Discount amount is:", discAmount );
+
+            document.getElementById("result").innerHTML = discAmount;
+        }
+    </script> -->
 </body>
 
 </html>
